@@ -11,13 +11,15 @@ gdjs.showScoreCode.GDt3Objects1= [];
 gdjs.showScoreCode.GDt3Objects2= [];
 gdjs.showScoreCode.GDcRegresObjects1= [];
 gdjs.showScoreCode.GDcRegresObjects2= [];
+gdjs.showScoreCode.GDfundoObjects1= [];
+gdjs.showScoreCode.GDfundoObjects2= [];
 
 gdjs.showScoreCode.conditionTrue_0 = {val:false};
 gdjs.showScoreCode.condition0IsTrue_0 = {val:false};
 gdjs.showScoreCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.showScoreCode.mapOfGDgdjs_46showScoreCode_46GDselMenuObjects1Objects = Hashtable.newFrom({"selMenu": gdjs.showScoreCode.GDselMenuObjects1});gdjs.showScoreCode.eventsList0x69ef90 = function(runtimeScene) {
+gdjs.showScoreCode.mapOfGDgdjs_46showScoreCode_46GDselMenuObjects1Objects = Hashtable.newFrom({"selMenu": gdjs.showScoreCode.GDselMenuObjects1});gdjs.showScoreCode.eventsList0x706e30 = function(runtimeScene) {
 
 {
 
@@ -33,8 +35,8 @@ gdjs.showScoreCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPre
 }
 
 
-}; //End of gdjs.showScoreCode.eventsList0x69ef90
-gdjs.showScoreCode.eventsList0xb2358 = function(runtimeScene) {
+}; //End of gdjs.showScoreCode.eventsList0x706e30
+gdjs.showScoreCode.eventsList0xb0cf8 = function(runtimeScene) {
 
 {
 
@@ -105,13 +107,13 @@ gdjs.showScoreCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(g
 }if (gdjs.showScoreCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.showScoreCode.eventsList0x69ef90(runtimeScene);} //End of subevents
+gdjs.showScoreCode.eventsList0x706e30(runtimeScene);} //End of subevents
 }
 
 }
 
 
-}; //End of gdjs.showScoreCode.eventsList0xb2358
+}; //End of gdjs.showScoreCode.eventsList0xb0cf8
 
 
 gdjs.showScoreCode.func = function(runtimeScene) {
@@ -128,8 +130,10 @@ gdjs.showScoreCode.GDt3Objects1.length = 0;
 gdjs.showScoreCode.GDt3Objects2.length = 0;
 gdjs.showScoreCode.GDcRegresObjects1.length = 0;
 gdjs.showScoreCode.GDcRegresObjects2.length = 0;
+gdjs.showScoreCode.GDfundoObjects1.length = 0;
+gdjs.showScoreCode.GDfundoObjects2.length = 0;
 
-gdjs.showScoreCode.eventsList0xb2358(runtimeScene);
+gdjs.showScoreCode.eventsList0xb0cf8(runtimeScene);
 return;
 }
 gdjs['showScoreCode'] = gdjs.showScoreCode;

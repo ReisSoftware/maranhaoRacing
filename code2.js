@@ -38,6 +38,9 @@ gdjs.Fase1Code.GDganhouObjects3= [];
 gdjs.Fase1Code.GDperdeuObjects1= [];
 gdjs.Fase1Code.GDperdeuObjects2= [];
 gdjs.Fase1Code.GDperdeuObjects3= [];
+gdjs.Fase1Code.GDhudObjects1= [];
+gdjs.Fase1Code.GDhudObjects2= [];
+gdjs.Fase1Code.GDhudObjects3= [];
 
 gdjs.Fase1Code.conditionTrue_0 = {val:false};
 gdjs.Fase1Code.condition0IsTrue_0 = {val:false};
@@ -49,7 +52,7 @@ gdjs.Fase1Code.condition1IsTrue_1 = {val:false};
 gdjs.Fase1Code.condition2IsTrue_1 = {val:false};
 
 
-gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDcarroObjects2Objects = Hashtable.newFrom({"carro": gdjs.Fase1Code.GDcarroObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDobstaculoObjects2Objects = Hashtable.newFrom({"obstaculo": gdjs.Fase1Code.GDobstaculoObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDcarroObjects2Objects = Hashtable.newFrom({"carro": gdjs.Fase1Code.GDcarroObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDinimigoObjects2Objects = Hashtable.newFrom({"inimigo": gdjs.Fase1Code.GDinimigoObjects2});gdjs.Fase1Code.eventsList0x720ae8 = function(runtimeScene) {
+gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDcarroObjects2Objects = Hashtable.newFrom({"carro": gdjs.Fase1Code.GDcarroObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDobstaculoObjects2Objects = Hashtable.newFrom({"obstaculo": gdjs.Fase1Code.GDobstaculoObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDcarroObjects2Objects = Hashtable.newFrom({"carro": gdjs.Fase1Code.GDcarroObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDinimigoObjects2Objects = Hashtable.newFrom({"inimigo": gdjs.Fase1Code.GDinimigoObjects2});gdjs.Fase1Code.eventsList0x713ad0 = function(runtimeScene) {
 
 {
 
@@ -60,8 +63,8 @@ gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDcarroObjects2Objects = Hashtable.newF
 }
 
 
-}; //End of gdjs.Fase1Code.eventsList0x720ae8
-gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDcarroObjects2Objects = Hashtable.newFrom({"carro": gdjs.Fase1Code.GDcarroObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDchaveVidaObjects2Objects = Hashtable.newFrom({"chaveVida": gdjs.Fase1Code.GDchaveVidaObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDcarroObjects1Objects = Hashtable.newFrom({"carro": gdjs.Fase1Code.GDcarroObjects1});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDfaixaObjects1Objects = Hashtable.newFrom({"faixa": gdjs.Fase1Code.GDfaixaObjects1});gdjs.Fase1Code.eventsList0x685dc8 = function(runtimeScene) {
+}; //End of gdjs.Fase1Code.eventsList0x713ad0
+gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDcarroObjects2Objects = Hashtable.newFrom({"carro": gdjs.Fase1Code.GDcarroObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDchaveVidaObjects2Objects = Hashtable.newFrom({"chaveVida": gdjs.Fase1Code.GDchaveVidaObjects2});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDcarroObjects1Objects = Hashtable.newFrom({"carro": gdjs.Fase1Code.GDcarroObjects1});gdjs.Fase1Code.mapOfGDgdjs_46Fase1Code_46GDfaixaObjects1Objects = Hashtable.newFrom({"faixa": gdjs.Fase1Code.GDfaixaObjects1});gdjs.Fase1Code.eventsList0x67e1a0 = function(runtimeScene) {
 
 {
 
@@ -76,8 +79,8 @@ gdjs.Fase1Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedT
 }
 
 
-}; //End of gdjs.Fase1Code.eventsList0x685dc8
-gdjs.Fase1Code.eventsList0x6849f0 = function(runtimeScene) {
+}; //End of gdjs.Fase1Code.eventsList0x67e1a0
+gdjs.Fase1Code.eventsList0x663468 = function(runtimeScene) {
 
 {
 
@@ -99,7 +102,8 @@ gdjs.Fase1Code.GDobstaculoObjects2.createFrom(runtimeScene.getObjects("obstaculo
 gdjs.Fase1Code.condition0IsTrue_0.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.Fase1Code.GDobstaculoObjects2.length;i<l;++i) {
-    if ( gdjs.Fase1Code.GDobstaculoObjects2[i].getX() < 60 ) {
+    if ( gdjs.Fase1Code.GDobstaculoObjects2[i].getX() < 60
+ ) {
         gdjs.Fase1Code.condition0IsTrue_0.val = true;
         gdjs.Fase1Code.GDobstaculoObjects2[k] = gdjs.Fase1Code.GDobstaculoObjects2[i];
         ++k;
@@ -154,7 +158,7 @@ for(var i = 0, k = 0, l = gdjs.Fase1Code.GDobstaculoObjects2.length;i<l;++i) {
 gdjs.Fase1Code.GDobstaculoObjects2.length = k;}if (gdjs.Fase1Code.condition0IsTrue_0.val) {
 /* Reuse gdjs.Fase1Code.GDobstaculoObjects2 */
 {for(var i = 0, len = gdjs.Fase1Code.GDobstaculoObjects2.length ;i < len;++i) {
-    gdjs.Fase1Code.GDobstaculoObjects2[i].setY(-(3400));
+    gdjs.Fase1Code.GDobstaculoObjects2[i].setY(-3400);
 }
 }{for(var i = 0, len = gdjs.Fase1Code.GDobstaculoObjects2.length ;i < len;++i) {
     gdjs.Fase1Code.GDobstaculoObjects2[i].setX(gdjs.random(640));
@@ -226,7 +230,7 @@ gdjs.Fase1Code.GDnVidasObjects2.createFrom(runtimeScene.getObjects("nVidas"));
     gdjs.Fase1Code.GDnVidasObjects2[i].setString(gdjs.evtTools.common.getVariableString(runtimeScene.getVariables().getFromIndex(0)));
 }
 }{for(var i = 0, len = gdjs.Fase1Code.GDobstaculoObjects2.length ;i < len;++i) {
-    gdjs.Fase1Code.GDobstaculoObjects2[i].setY(-(3400));
+    gdjs.Fase1Code.GDobstaculoObjects2[i].setY(-3400);
 }
 }{for(var i = 0, len = gdjs.Fase1Code.GDobstaculoObjects2.length ;i < len;++i) {
     gdjs.Fase1Code.GDobstaculoObjects2[i].setX(gdjs.random(640));
@@ -252,7 +256,7 @@ gdjs.Fase1Code.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTe
 }
 }
 { //Subevents
-gdjs.Fase1Code.eventsList0x720ae8(runtimeScene);} //End of subevents
+gdjs.Fase1Code.eventsList0x713ad0(runtimeScene);} //End of subevents
 }
 
 }
@@ -293,14 +297,14 @@ gdjs.Fase1Code.GDganhouObjects1.createFrom(runtimeScene.getObjects("ganhou"));
 }
 }
 { //Subevents
-gdjs.Fase1Code.eventsList0x685dc8(runtimeScene);} //End of subevents
+gdjs.Fase1Code.eventsList0x67e1a0(runtimeScene);} //End of subevents
 }
 
 }
 
 
-}; //End of gdjs.Fase1Code.eventsList0x6849f0
-gdjs.Fase1Code.eventsList0x686c98 = function(runtimeScene) {
+}; //End of gdjs.Fase1Code.eventsList0x663468
+gdjs.Fase1Code.eventsList0x6709b0 = function(runtimeScene) {
 
 {
 
@@ -315,8 +319,8 @@ gdjs.Fase1Code.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedT
 }
 
 
-}; //End of gdjs.Fase1Code.eventsList0x686c98
-gdjs.Fase1Code.eventsList0xb2358 = function(runtimeScene) {
+}; //End of gdjs.Fase1Code.eventsList0x6709b0
+gdjs.Fase1Code.eventsList0xb0cf8 = function(runtimeScene) {
 
 {
 
@@ -387,7 +391,7 @@ gdjs.Fase1Code.condition0IsTrue_1.val = gdjs.evtTools.common.getVariableNumber(r
 gdjs.Fase1Code.GDchaveVidaObjects1.createFrom(runtimeScene.getObjects("chaveVida"));
 {runtimeScene.getVariables().getFromIndex(1).add(100);
 }{for(var i = 0, len = gdjs.Fase1Code.GDchaveVidaObjects1.length ;i < len;++i) {
-    gdjs.Fase1Code.GDchaveVidaObjects1[i].setY(-(43));
+    gdjs.Fase1Code.GDchaveVidaObjects1[i].setY(-43);
 }
 }{for(var i = 0, len = gdjs.Fase1Code.GDchaveVidaObjects1.length ;i < len;++i) {
     gdjs.Fase1Code.GDchaveVidaObjects1[i].setX(gdjs.random(640));
@@ -547,7 +551,7 @@ gdjs.Fase1Code.condition0IsTrue_1.val = false;
 gdjs.Fase1Code.condition1IsTrue_1.val = false;
 {
 for(var i = 0, k = 0, l = gdjs.Fase1Code.GDcarroObjects1.length;i<l;++i) {
-    if ( gdjs.Fase1Code.GDcarroObjects1[i].getX() > -(30) ) {
+    if ( gdjs.Fase1Code.GDcarroObjects1[i].getX() > -30 ) {
         gdjs.Fase1Code.condition0IsTrue_1.val = true;
         gdjs.Fase1Code.GDcarroObjects1[k] = gdjs.Fase1Code.GDcarroObjects1[i];
         ++k;
@@ -682,7 +686,8 @@ gdjs.Fase1Code.GDsandObjects1.createFrom(runtimeScene.getObjects("sand"));
     gdjs.Fase1Code.GDfundoObjects1[i].setYOffset(gdjs.Fase1Code.GDfundoObjects1[i].getYOffset() - (gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0))));
 }
 }{for(var i = 0, len = gdjs.Fase1Code.GDsandObjects1.length ;i < len;++i) {
-    gdjs.Fase1Code.GDsandObjects1[i].setYOffset(gdjs.Fase1Code.GDsandObjects1[i].getYOffset() - (gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0))));
+    gdjs.Fase1Code.GDsandObjects1[i].setYOffset(gdjs.Fase1Code.GDsandObjects1[i].getYOffset() - (gdjs.evtTools.common.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0))
+));
 }
 }}
 
@@ -692,7 +697,7 @@ gdjs.Fase1Code.GDsandObjects1.createFrom(runtimeScene.getObjects("sand"));
 {
 
 
-gdjs.Fase1Code.eventsList0x6849f0(runtimeScene);
+gdjs.Fase1Code.eventsList0x663468(runtimeScene);
 }
 
 
@@ -804,13 +809,13 @@ gdjs.Fase1Code.GDperdeuObjects1.createFrom(runtimeScene.getObjects("perdeu"));
 }
 }
 { //Subevents
-gdjs.Fase1Code.eventsList0x686c98(runtimeScene);} //End of subevents
+gdjs.Fase1Code.eventsList0x6709b0(runtimeScene);} //End of subevents
 }
 
 }
 
 
-}; //End of gdjs.Fase1Code.eventsList0xb2358
+}; //End of gdjs.Fase1Code.eventsList0xb0cf8
 
 
 gdjs.Fase1Code.func = function(runtimeScene) {
@@ -854,8 +859,11 @@ gdjs.Fase1Code.GDganhouObjects3.length = 0;
 gdjs.Fase1Code.GDperdeuObjects1.length = 0;
 gdjs.Fase1Code.GDperdeuObjects2.length = 0;
 gdjs.Fase1Code.GDperdeuObjects3.length = 0;
+gdjs.Fase1Code.GDhudObjects1.length = 0;
+gdjs.Fase1Code.GDhudObjects2.length = 0;
+gdjs.Fase1Code.GDhudObjects3.length = 0;
 
-gdjs.Fase1Code.eventsList0xb2358(runtimeScene);
+gdjs.Fase1Code.eventsList0xb0cf8(runtimeScene);
 return;
 }
 gdjs['Fase1Code'] = gdjs.Fase1Code;

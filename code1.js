@@ -11,13 +11,16 @@ gdjs.menuPrincipalCode.GDselecaoSairObjects3= [];
 gdjs.menuPrincipalCode.GDmaraObjects1= [];
 gdjs.menuPrincipalCode.GDmaraObjects2= [];
 gdjs.menuPrincipalCode.GDmaraObjects3= [];
+gdjs.menuPrincipalCode.GDfundoObjects1= [];
+gdjs.menuPrincipalCode.GDfundoObjects2= [];
+gdjs.menuPrincipalCode.GDfundoObjects3= [];
 
 gdjs.menuPrincipalCode.conditionTrue_0 = {val:false};
 gdjs.menuPrincipalCode.condition0IsTrue_0 = {val:false};
 gdjs.menuPrincipalCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.menuPrincipalCode.mapOfGDgdjs_46menuPrincipalCode_46GDselecaoJogarObjects1Objects = Hashtable.newFrom({"selecaoJogar": gdjs.menuPrincipalCode.GDselecaoJogarObjects1});gdjs.menuPrincipalCode.eventsList0x683e50 = function(runtimeScene) {
+gdjs.menuPrincipalCode.mapOfGDgdjs_46menuPrincipalCode_46GDselecaoJogarObjects1Objects = Hashtable.newFrom({"selecaoJogar": gdjs.menuPrincipalCode.GDselecaoJogarObjects1});gdjs.menuPrincipalCode.eventsList0x67ed78 = function(runtimeScene) {
 
 {
 
@@ -59,8 +62,8 @@ gdjs.menuPrincipalCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButto
 }
 
 
-}; //End of gdjs.menuPrincipalCode.eventsList0x683e50
-gdjs.menuPrincipalCode.eventsList0xb2358 = function(runtimeScene) {
+}; //End of gdjs.menuPrincipalCode.eventsList0x67ed78
+gdjs.menuPrincipalCode.eventsList0xb0cf8 = function(runtimeScene) {
 
 {
 
@@ -72,13 +75,13 @@ gdjs.menuPrincipalCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObje
 }if (gdjs.menuPrincipalCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.menuPrincipalCode.eventsList0x683e50(runtimeScene);} //End of subevents
+gdjs.menuPrincipalCode.eventsList0x67ed78(runtimeScene);} //End of subevents
 }
 
 }
 
 
-}; //End of gdjs.menuPrincipalCode.eventsList0xb2358
+}; //End of gdjs.menuPrincipalCode.eventsList0xb0cf8
 
 
 gdjs.menuPrincipalCode.func = function(runtimeScene) {
@@ -95,8 +98,11 @@ gdjs.menuPrincipalCode.GDselecaoSairObjects3.length = 0;
 gdjs.menuPrincipalCode.GDmaraObjects1.length = 0;
 gdjs.menuPrincipalCode.GDmaraObjects2.length = 0;
 gdjs.menuPrincipalCode.GDmaraObjects3.length = 0;
+gdjs.menuPrincipalCode.GDfundoObjects1.length = 0;
+gdjs.menuPrincipalCode.GDfundoObjects2.length = 0;
+gdjs.menuPrincipalCode.GDfundoObjects3.length = 0;
 
-gdjs.menuPrincipalCode.eventsList0xb2358(runtimeScene);
+gdjs.menuPrincipalCode.eventsList0xb0cf8(runtimeScene);
 return;
 }
 gdjs['menuPrincipalCode'] = gdjs.menuPrincipalCode;
